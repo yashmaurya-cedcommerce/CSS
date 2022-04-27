@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Maestro HTML Prompt -- Example by JMichaelTX</title>
+    <link rel="stylesheet" href="KM.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2><i>KM Custom HTML Form Example Using AppleScriptlet</i></h2>
+        <h2>By JMichaelTX</h2>
+        <div class="tablediv">
+            <table>
+                <form>
+                    <tr>
+                        <td>
+                            <label for="name"><b>Name:</b></label>
+                        </td>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail"><b>Email:</b></label>
+                        </td>
+                        <td><input type="text" id="mail"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pass"><b>Password:</b></label>
+                        </td>
+                        <td>
+                            <input type="password" id="pass">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="approval"><b>Approval Required:</b></label>
+                            <h5>Click on the button or text to check/uncheck </h5>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="approval">
+                            <label for="approval">Do You Approve?</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fav"><b>Pick your favourite:</b></label>
+                            <h5>Click on the button or text to</h5>
+                        </td>
+                        <td>
+                            <input type="radio" id="fav" name="pick" value="A">
+                            <label for="fav">Choice A</label>
+                            <input type="radio" id="fav" name="pick" value="B">
+                            <label for="fav">Choice B</label>
+                            <input type="radio" id="fav" name="pick" value="C">
+                            <label for="fav">Choice C</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="drop"><b>Popup Menu:</b></label>
+                        </td>
+                        <td>
+                            <select names="dropdown" id="drop">
+                                <option value="TX">Texas--TX</option>
+                                <option value="CO">Colorado--CO</option>
+                                <option value="CN">Connecticut--CN</option>
+                                <option value="DO">Dalifornia--DA</option>
+                                <option value="DO">Dolorado--DO</option>
+                                <option value="FL">Florida--FL</option>
+                            </select>
+        </div>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="cities"><b>List:</b></label>
+                <p>Setup options:
+                <ul id="small">
+                    <li>Number of rows to display</li>
+                    <li>Allow multi-select</li>
+                </ul>
+                </p>
+            </td>
+            <td>
+                <nav>
+                    <ul id="city_list">
+                        <li>California--CA</li>
+                        <li>Colorado--CO</li>
+                        <li>Connecticut--CN</li>
+                        <li>Dalifornia--DA</li>
+                        <li>California--CA</li>
+                        <li>Colorado--CO</li>
+                        <li>Connecticut--CN</li>
+                        <li>Dalifornia--DA</li>
+                    </ul>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="dist"><b>Field ignored by KM:</b></label>
+            </td>
+            <td>
+                <input type="number" id="dist" placeholder="10384">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="textarea"><b>Text Area:</b></label>
+            </td>
+            <td>
+                <input class="bigtext" type="text" id="textarea">
+            </td>
+        </tr>
+        </form>
+        </table>
+    </div>
+    <div class="btns">
+        <button type="button" id="s_btn"><b>Save</b></button>
+        <button type="button" id="c_btn"><b>Cancel</b></button>
+        <button type="button" id="resize"><b>Resize</b></button>
+    </div>
+    </div>
+</body>
+
+</html>
