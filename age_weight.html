@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Weight</title>
+    <link rel="stylesheet" href="age_weight.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&family=Rubik&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <table>
+          <tr>
+            <td>
+              <label for="age">Age:</label>
+            </td>
+            <td>
+              <input type="number" id="age" placeholder="Enter Age" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="wt">Weight:</label>
+            </td>
+            <td>
+              <input type="number" id="wt" placeholder="Enter Weight" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <button class="btn" type="button" onclick="calc()">Submit</button>
+      <p id="ans"></p>
+    </div>
+    <script>
+      function calc() {
+        var msg = document.getElementById("ans");
+        var age = document.getElementById("age");
+        var weight = document.getElementById("wt");
+        if (age.value <= 5 && age.value <= 7) {
+          if (weight.value < 15) {
+            msg.innerText = "You are underweight";
+            msg.className = "red";
+            return;
+          } else if (weight.value >= 15 && weight.value <= 20) {
+            msg.innerText = "Keep it Up!";
+            msg.className = "green";
+            return;
+          } else {
+            msg.innerText = "You are overweight";
+            msg.className = "red";
+            return;
+          }
+        }
+        if (age.value >= 8 && age.value <= 10) {
+          if (weight.value < 21) {
+            msg.innerText = "You are underweight";
+            msg.className = "red";
+            return;
+          } else if (weight.value >= 21 && weight.value <= 25) {
+            msg.innerText = "Keep it Up!";
+            msg.className = "green";
+            return;
+          } else {
+            msg.innerText = "You are overweight";
+            msg.className = "red";
+            return;
+          }
+        }
+        if (age.value >= 11 && age.value <= 15) {
+          if (weight.value < 26) {
+            msg.innerText = "You are underweight";
+            msg.className = "red";
+            return;
+          } else if (weight.value >= 26 && weight.value <= 30) {
+            msg.innerText = "Keep it Up!";
+            msg.className = "green";
+            return;
+          } else {
+            msg.innerText = "You are overweight";
+            msg.className = "red";
+          }
+        }
+        if (age.value >= 16 && age.value <= 20) {
+          if (weight.value < 31) {
+            msg.innerText = "You are underweight";
+            msg.className = "red";
+            return;
+          } else if (weight.value >= 31 && weight.value <= 40) {
+            msg.innerText = "Keep it Up!";
+            msg.className = "green";
+            return;
+          } else msg.innerText = "You are overweight";
+          msg.className = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
