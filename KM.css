@@ -1,0 +1,68 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    width: 48%;
+    margin: auto;
+    border: 2px solid black;
+    background-color: rgb(245, 202, 121);
+    padding: 1%;
+}
+h2{
+    text-align: center;
+}
+nav ul{
+    height: 100px;
+    width: 140px;
+    background-color: white;
+    list-style: none;    
+    padding: 2px;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+}
+.bigtext{
+    height: 100px;
+    width: 300px;
+}
+#s_btn{
+    background-color: rgb(48, 48, 221);
+    width: 70px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 2px;
+    color: white
+}
+.tablediv{
+    margin-bottom: 10px;
+}
+#c_btn{
+    background-color: rgb(253, 253, 253);
+    width: 70px;
+    height: 30px;
+    border: 1px solid rgb(48, 48, 221);
+    border-radius: 10px;
+    padding: 2px;
+    color: rgb(0, 0, 0);
+}
+#resize{
+    background-color: rgb(151, 148, 148);
+    width: 70px;
+    height: 30px;
+    box-shadow: inset;
+    border-radius: 10px;
+    padding: 2px;
+    color: rgb(0, 0, 0);
+}
+table, tr, td{
+    margin: auto;
+    border: 2px solid black;
+}
+.btns{
+    margin-left: 5%;
+}
+#small{
+    font-size: 12px;
+}
