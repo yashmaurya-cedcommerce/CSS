@@ -1,0 +1,30 @@
+*{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.container{
+    width: 35%;
+    margin: 5% 33%;
+    border: 2px solid black;
+    padding: 1%;
+}
+table tr td{
+    padding: 3%;
+    width: 130px;
+}
+#add_btn{
+    border: 2px solid rgb(148, 147, 147);
+    box-shadow: 3px;
+    margin-left:40%;
+    margin-top: 1%;
+    background-color: rgb(205, 207, 207);
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#ans{
+    width: 35%;
+    margin: 5% 33%;
+    /* border: 2px solid black; */
+    padding: 1%;
+}
